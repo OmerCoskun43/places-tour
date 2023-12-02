@@ -1,0 +1,12 @@
+@import "./scss/reset";
+@import "./scss/variables";
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  background: $card-bg-color;
+
+  font-family: "Indie Flower", cursive;
+}
+
+// font-family: 'Pacifico', cursive;

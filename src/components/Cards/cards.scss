@@ -1,0 +1,41 @@
+@import "../../scss/variables";
+.cards {
+  font-family: "Pacifico", cursive;
+  //   margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: rgb(62, 62, 206);
+  position: relative;
+  overflow: hidden;
+  &:hover .card-over {
+    transform: translateY(0px);
+  }
+  &:hover {
+    filter: grayscale(100%);
+  }
+
+  img {
+    width: 500px;
+    height: 350px;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+
+  .card-over {
+    position: absolute;
+    text-align: justify;
+    text-indent: 2rem;
+    color: white;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0rem 1.5rem;
+    transform: translateY(500px);
+    transition: all 0.7s;
+  }
+  .title {
+    color: $card-bg-color;
+    font-weight: bold;
+  }
+}

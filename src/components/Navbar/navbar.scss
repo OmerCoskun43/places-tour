@@ -1,0 +1,28 @@
+@import "../../scss/variables";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $color-4;
+  margin: 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    &:hover {
+      color: black;
+      background-color: $color-5;
+      border-bottom: 1px solid $color-4;
+    }
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
